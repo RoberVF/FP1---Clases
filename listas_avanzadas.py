@@ -6,6 +6,11 @@ notas = [7, 4, 10, 6, 8, 5, 9, 3, 7]
 # 1. Crear una funcion que devuelva la media de las notas
 def calcular_media(notas):
     return sum(notas) / len(notas) 
+    # sumatorio = 0
+    # for i in range(len(notas)):
+    #     sumatorio += notas[i]
+    # return sumatorio / len(notas)
+
 
 print(calcular_media(notas))
 
