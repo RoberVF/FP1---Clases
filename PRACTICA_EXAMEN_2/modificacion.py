@@ -40,7 +40,7 @@ def renombrar_asignatura(datos, cod_asig, nuevo_nombre):
 
 def cambiar_codigos_asignaturas(datos):
     estudiantes, asignaturas, examenes = datos
-    
+
     # Paso 1: Crear mapeo de claves viejas a nuevas
     mapeo_cambios = {}
     claves_antiguas = list(asignaturas.keys())

@@ -44,12 +44,12 @@ def cargar_datos_prueba():
             "estudiantes": {"3333C"}, 
             "examenes": set()
         },
-        # "EXP01": { 
-        #     "nombre": "Expresión Gráfica",
-        #     "semestre": 1,
-        #     "estudiantes": set(),
-        #     "examenes": set()
-        # }
+        "EXP01": { 
+            "nombre": "Expresión Gráfica",
+            "semestre": 1,
+            "estudiantes": set(),
+            "examenes": set()
+        }
     }
 
     # Diccionario de Examenes
@@ -72,4 +72,30 @@ def cargar_datos_prueba():
 
 if __name__ == "__main__":
     datos = cargar_datos_prueba()
-    print(consulta.listar_estudiantes_asignatura(datos, "PROG1"))
+    
+    # # CONSULTA
+    # print(consulta.listar_estudiantes_asignatura(datos, "PROG1"))
+    
+    # print(consulta.calcular_media_estudiante(datos, "1111A")) 
+    # print(consulta.asignaturas_sin_examenes(datos)) 
+
+    # print(consulta.ranking_estudiantes(datos))
+
+    # # ADICCION    
+    # print(adiccion.matricular_estudiante(datos, "3333C", "PROG1"))
+
+    # nuevo_examen = ("E-PROG-REC", "Recuperacion Python", "PROG1", "2024-06-20")
+    # print(adiccion.crear_examen(datos, nuevo_examen))
+
+    # print(adiccion.registrar_nota(datos, "E-PROG-REC", "2222B", 6.0))
+
+    # # MODIFICACION
+    # print(modificacion.actualizar_nota(datos, "E-MAT-1", "1111A", 10.0))
+    # _, asignaturas, examenes = datos
+    # print("   Nueva nota en examen:", examenes["E-MAT-1"]["notas"]["1111A"])
+
+    # print(modificacion.cambiar_codigos_asignaturas(datos))
+    # print("   Claves de asignaturas actuales:", list(asignaturas.keys()))
+
+    # #BORRADO
+    # print(borrado.eliminar_estudiante_completo(datos, "2222B"))
